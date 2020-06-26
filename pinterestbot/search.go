@@ -3,7 +3,7 @@ package pinterestbot
 import (
 	"encoding/json"
 	"github.com/dghubble/sling"
-	"github.com/jezerdave/go-pinterest-bot/pinterestbot/resource"
+	"github.com/orangeapps/pinterest-bot/pinterestbot/resource"
 	"net/http"
 	"time"
 )

@@ -1,8 +1,8 @@
 package pinterestbot
 
 import (
-	"github.com/jezerdave/go-pinterest-bot/pinterestbot/resource"
-	"github.com/jezerdave/go-pinterest-bot/pinterestbot/user"
+	"github.com/orangeapps/pinterest-bot/pinterestbot/resource"
+	"github.com/orangeapps/pinterest-bot/pinterestbot/user"
 )
 
 

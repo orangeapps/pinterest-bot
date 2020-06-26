@@ -1,7 +1,7 @@
 package pin
 
 import (
-	"github.com/jezerdave/go-pinterest-bot/pinterestbot/resource"
+	"github.com/orangeapps/pinterest-bot/pinterestbot/resource"
 )
 
 type Response struct {

@@ -1,6 +1,6 @@
 package user
 
-import "github.com/jezerdave/go-pinterest-bot/pinterestbot/resource"
+import "github.com/orangeapps/pinterest-bot/pinterestbot/resource"
 
 type Response struct {
 	ResourceResponse  ResourceResponse       `json:"resource_response"`

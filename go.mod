@@ -1,4 +1,4 @@
-module github.com/jezerdave/go-pinterest-bot
+module github.com/orangeapps/pinterest-bot
 
 go 1.13
 

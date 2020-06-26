@@ -3,8 +3,8 @@ package pinterestbot
 import (
 	"fmt"
 
-	"github.com/jezerdave/go-pinterest-bot/pinterestbot/pin"
-	"github.com/jezerdave/go-pinterest-bot/pinterestbot/resource"
+	"github.com/orangeapps/pinterest-bot/pinterestbot/pin"
+	"github.com/orangeapps/pinterest-bot/pinterestbot/resource"
 	"github.com/mitchellh/mapstructure"
 )
 
