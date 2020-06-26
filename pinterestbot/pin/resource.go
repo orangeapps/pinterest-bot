@@ -140,7 +140,7 @@ type InfoPin struct {
 	Attribution                     interface{}       `json:"attribution"`
 	IsHidden                        bool              `json:"is_hidden"`
 	IsQuickPromotable               bool              `json:"is_quick_promotable"`
-	PriceValue                      int64             `json:"price_value"`
+	PriceValue                      float64{}         `json:"price_value"`
 	Section                         interface{}       `json:"section"`
 	RepinCount                      int64             `json:"repin_count"`
 	IsPlayable                      bool              `json:"is_playable"`
