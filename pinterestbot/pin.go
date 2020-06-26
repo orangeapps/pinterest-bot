@@ -1,11 +1,9 @@
 package pinterestbot
 
 import (
-	"fmt"
-
+	"github.com/mitchellh/mapstructure"
 	"github.com/orangeapps/pinterest-bot/pinterestbot/pin"
 	"github.com/orangeapps/pinterest-bot/pinterestbot/resource"
-	"github.com/mitchellh/mapstructure"
 )
 
 type PinService interface {
@@ -64,7 +62,6 @@ func (s pinService) Search(param SearchParameters) (*pin.Response, error) {
 func (s pinService) SearchResource(param SearchParameters) (*pin.SearchResponse, error) {
 
 	request := resource.GetParameters(param)
-	fmt.Println("[REQUEST]: ", request)
 	response := new(pin.SearchResponse)
 
 	url := ""
