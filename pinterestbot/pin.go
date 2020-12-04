@@ -1,6 +1,7 @@
 package pinterestbot
 
 import (
+	"encoding/json"
 	"fmt"
 
 	"github.com/mitchellh/mapstructure"
@@ -57,7 +58,9 @@ func (s pinService) Search(param SearchParameters) (*pin.Response, error) {
 		return nil, err
 	}
 
-	fmt.Println("[PINTEREST RESPONSE]: ", &response.ResourceResponse.Data.Results)
+	b, err := json.Marshal(&response.ResourceResponse.Data.Results)
+
+	fmt.Println("[PINTEREST RESPONSE]: ", string(b))
 
 	return response, nil
 }
