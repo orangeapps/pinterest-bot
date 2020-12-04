@@ -1,8 +1,6 @@
 package pinterestbot
 
 import (
-	"encoding/json"
-
 	"github.com/mitchellh/mapstructure"
 	"github.com/orangeapps/pinterest-bot/pinterestbot/pin"
 	"github.com/orangeapps/pinterest-bot/pinterestbot/resource"
@@ -54,7 +52,7 @@ func (s pinService) Search(param SearchParameters) (*pin.Response, error) {
 	request.Scope = "pins"
 	_, _, err := s.http.Get(url, request, &response)
 
-	b, _ := json.Marshal(&response)
+	// b, _ := json.Marshal(&response)
 
 	// fmt.Println("[PINTEREST RESPONSE]: ", string(b))
 
