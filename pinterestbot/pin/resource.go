@@ -113,7 +113,7 @@ type InfoPin struct {
 	VideoStatus                     interface{}       `json:"video_status"`
 	Access                          []interface{}     `json:"access"`
 	ImageSignature                  string            `json:"image_signature"`
-	GridTitle                       string            `json:"grid_title"`
+	GridTitle                       string            `json:"grid_title,omitempty"`
 	CarouselData                    interface{}       `json:"carousel_data"`
 	IsEligibleForAggregatedComments bool              `json:"is_eligible_for_aggregated_comments"`
 	Domain                          string            `json:"domain"`
@@ -122,7 +122,7 @@ type InfoPin struct {
 	ProductPinData                  interface{}       `json:"product_pin_data"`
 	ViaPinner                       interface{}       `json:"via_pinner"`
 	Hashtags                        []interface{}     `json:"hashtags"`
-	Title                           string            `json:"title"`
+	Title                           string            `json:"title,omitempty"`
 	ID                              string            `json:"id"`
 	PromotedIsRemovable             bool              `json:"promoted_is_removable"`
 	Privacy                         string            `json:"privacy"`
