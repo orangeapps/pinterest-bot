@@ -49,7 +49,7 @@ func (a *Api) Get(resource string, request GetParameters, response interface{}) 
 	requestParam.TS = time.Now().UnixNano()
 
 	if request.PageSize == 0 {
-		request.PageSize = 25
+		request.PageSize = 250
 	}
 
 	options.Options = request
