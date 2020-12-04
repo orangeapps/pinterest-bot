@@ -54,13 +54,14 @@ func (s pinService) Search(param SearchParameters) (*pin.Response, error) {
 
 	request.Scope = "pins"
 	_, _, err := s.http.Get(url, request, &response)
+
+	b, _ := json.Marshal(&response)
+
+	fmt.Println("[PINTEREST RESPONSE]: ", string(b))
+
 	if err != nil {
 		return nil, err
 	}
-
-	b, err := json.Marshal(&response.ResourceResponse.Data.Results)
-
-	fmt.Println("[PINTEREST RESPONSE]: ", string(b))
 
 	return response, nil
 }
