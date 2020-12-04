@@ -122,28 +122,28 @@ type InfoPin struct {
 	ProductPinData                  interface{}       `json:"product_pin_data"`
 	ViaPinner                       interface{}       `json:"via_pinner"`
 	Hashtags                        []interface{}     `json:"hashtags"`
-	// Title                           string            `json:"title"`
-	ID                         string      `json:"id"`
-	PromotedIsRemovable        bool        `json:"promoted_is_removable"`
-	Privacy                    string      `json:"privacy"`
-	CreatedAt                  string      `json:"created_at"`
-	ThirdPartyPinOwner         interface{} `json:"third_party_pin_owner"`
-	EditedFields               []string    `json:"edited_fields"`
-	BuyableProductAvailability interface{} `json:"buyable_product_availability"`
-	DescriptionHTML            string      `json:"description_html"`
-	IsNative                   bool        `json:"is_native"`
-	UnifiedUserNote            string      `json:"unified_user_note"`
-	MobileLink                 string      `json:"mobile_link"`
-	IsEligibleForBrandCatalog  bool        `json:"is_eligible_for_brand_catalog"`
-	IsVideo                    bool        `json:"is_video"`
-	IsWhitelistedForTriedIt    bool        `json:"is_whitelisted_for_tried_it"`
-	Attribution                interface{} `json:"attribution"`
-	IsHidden                   bool        `json:"is_hidden"`
-	IsQuickPromotable          bool        `json:"is_quick_promotable"`
-	PriceValue                 float64     `json:"price_value"`
-	Section                    interface{} `json:"section"`
-	RepinCount                 int64       `json:"repin_count"`
-	IsPlayable                 bool        `json:"is_playable"`
+	Title                           interface{}       `json:"title"`
+	ID                              string            `json:"id"`
+	PromotedIsRemovable             bool              `json:"promoted_is_removable"`
+	Privacy                         string            `json:"privacy"`
+	CreatedAt                       string            `json:"created_at"`
+	ThirdPartyPinOwner              interface{}       `json:"third_party_pin_owner"`
+	EditedFields                    []string          `json:"edited_fields"`
+	BuyableProductAvailability      interface{}       `json:"buyable_product_availability"`
+	DescriptionHTML                 string            `json:"description_html"`
+	IsNative                        bool              `json:"is_native"`
+	UnifiedUserNote                 string            `json:"unified_user_note"`
+	MobileLink                      string            `json:"mobile_link"`
+	IsEligibleForBrandCatalog       bool              `json:"is_eligible_for_brand_catalog"`
+	IsVideo                         bool              `json:"is_video"`
+	IsWhitelistedForTriedIt         bool              `json:"is_whitelisted_for_tried_it"`
+	Attribution                     interface{}       `json:"attribution"`
+	IsHidden                        bool              `json:"is_hidden"`
+	IsQuickPromotable               bool              `json:"is_quick_promotable"`
+	PriceValue                      float64           `json:"price_value"`
+	Section                         interface{}       `json:"section"`
+	RepinCount                      int64             `json:"repin_count"`
+	IsPlayable                      bool              `json:"is_playable"`
 }
 
 type AggregatedPinData struct {
