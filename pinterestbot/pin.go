@@ -57,7 +57,7 @@ func (s pinService) Search(param SearchParameters) (*pin.Response, error) {
 		return nil, err
 	}
 
-	fmt.Println("[PINTEREST RESPONSE]: ", &response)
+	fmt.Println("[PINTEREST RESPONSE]: ", &response.ResourceResponse.Data.Results)
 
 	return response, nil
 }
