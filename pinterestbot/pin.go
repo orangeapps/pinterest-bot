@@ -60,7 +60,7 @@ func (s pinService) Search(param SearchParameters) (*pin.Response, error) {
 	fmt.Println("[PINTEREST RESPONSE]: ", string(b))
 
 	if err != nil {
-		return response, err
+		return response, nil
 	}
 
 	return response, nil
