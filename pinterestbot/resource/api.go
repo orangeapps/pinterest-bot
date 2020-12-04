@@ -66,7 +66,7 @@ func (a *Api) Get(resource string, request GetParameters, response interface{}) 
 		fmt.Println("[PINTEREST ERROR]: ", err)
 		return nil, nil, err
 	}
-	fmt.Println("[PINTEREST HTTP BODY RESPONSE]: ", httpResponse.Body)
+	fmt.Println("[PINTEREST HTTP BODY RESPONSE]: ", &httpResponse)
 	fmt.Println("[PINTEREST HTTP RESPONSE]: ", response)
 	return response, httpResponse, nil
 }
