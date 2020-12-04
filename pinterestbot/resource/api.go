@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/dghubble/sling"
@@ -65,6 +66,10 @@ func (a *Api) Get(resource string, request GetParameters, response interface{}) 
 	if err != nil {
 		fmt.Println("[PINTEREST ERROR]: ", err)
 		fmt.Println("[PINTEREST HTTP BODY RESPONSE]: ", &httpResponse.Body)
+
+		body := strings.NewReader("raw body")
+		a, err := a.http.New().Get(resource).Body(body).Request()
+		fmt.Println("[TEST RESOURCE]: ", a)
 		return nil, nil, err
 	}
 	fmt.Println("[PINTEREST HTTP BODY RESPONSE]: ", &httpResponse)
