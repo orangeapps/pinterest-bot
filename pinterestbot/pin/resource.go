@@ -122,7 +122,7 @@ type InfoPin struct {
 	ProductPinData                  interface{}       `json:"product_pin_data"`
 	ViaPinner                       interface{}       `json:"via_pinner"`
 	Hashtags                        []interface{}     `json:"hashtags"`
-	Title                           interface{}       `json:"title"`
+	Title                           string            `json:"title"`
 	ID                              string            `json:"id"`
 	PromotedIsRemovable             bool              `json:"promoted_is_removable"`
 	Privacy                         string            `json:"privacy"`
