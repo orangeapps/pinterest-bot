@@ -51,8 +51,6 @@ func (s pinService) Search(param SearchParameters) (*pin.Response, error) {
 		url = resource.UrlSearchWithPagination
 	}
 
-	fmt.Println("[PINTEREST URL]: ", url)
-
 	request.Scope = "pins"
 	_, _, err := s.http.Get(url, request, &response)
 	if err != nil {
