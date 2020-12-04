@@ -62,7 +62,7 @@ func (a *Api) Get(resource string, request GetParameters, response interface{}) 
 	requestParam.Data = string(parsedOptions)
 
 	httpResponse, err := a.http.New().Get(resource).QueryStruct(requestParam).Receive(response, err)
-	fmt.Println("[PINTEREST HTTP RESPONSE]: ", httpResponse)
+	fmt.Println("[PINTEREST HTTP RESPONSE]: ", httpResponse.Body)
 	if err != nil {
 		return nil, nil, err
 	}
